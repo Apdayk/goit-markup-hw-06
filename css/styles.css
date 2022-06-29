@@ -790,7 +790,6 @@ p {
 .form-label {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .form-label:hover .modal-form-input,
@@ -804,6 +803,10 @@ p {
 .form-label:hover .form-modal-icon,
 .form-label:focus-within .form-modal-icon {
   fill: var(--brand-color-accent);
+}
+
+.modal-form-box {
+  position: relative;
 }
 
 .modal-close-icon {
@@ -825,8 +828,9 @@ p {
 
 .form-modal-icon {
   position: absolute;
-  left: 12px;
-  top: 29px;
+  left: 15px;
+  top: calc(50% + -3px);
+  transform: translateY(-50%);
 }
 
 .form-label-checkbox {
@@ -908,7 +912,7 @@ p {
 /* ------Подвал Форма------- */
 
 .footer-form {
-  margin-left: 154px;
+  margin-left: 93px;
 }
 
 .footer-form-title {
